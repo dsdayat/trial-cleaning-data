@@ -1,0 +1,145 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Salinan dari Untitled2.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyOcynqmxFbyKH6fWF3V+Kni",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/dsdayat/trial-cleaning-data/blob/main/Assignment%20Day%203%20DS%20batch%2015\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Tugas 1** (Day-3 DS Batch-15) "
+      ],
+      "metadata": {
+        "id": "tQezH-rf7c35"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**1**. Print out integers which are multiples of 3 from 1 to 22. (Print out bilangan bulat yang merupakan kelipatan 3 dari 1 sampai 22).\n",
+        "\n",
+        "*Ekspektasi jawaban:*\n",
+        "\n",
+        "Ketika kode kalian di-run, muncul angka-angka: 3, 6, 9, 12, 15, 18, 21. Gunakan looping.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "K_NsgrvkXUdH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for x in range(3,23,3):\n",
+        "    print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cSU8XU1N7lg1",
+        "outputId": "304be76e-ad62-464b-c700-71cb9a658067"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "6\n",
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**2.** Buat sebuah function di Python untuk mengecek apakah sebuah angka merupakan bilangan prima atau bukan.\n",
+        "\n",
+        "*Ekspektasi jawaban:* \n",
+        "\n",
+        "misal fungsi Anda bernama prime_check. Ketika kita jalankan prime_check(5), maka outputnya adalah '5 is a Prime number'. Fungsi ini harus bisa berlaku untuk input apa pun.\n",
+        "\n",
+        "Clue: Pengecekan bilangan prima menggunakan looping dan modulo. \n",
+        "\n",
+        "Clue: Pengecekan bilangan prima menggunakan looping dan modulo. \n",
+        "```(python)\n",
+        "print('Hasil dari 5 modulo 2 adalah',5 % 2)  \n",
+        "# 5 Modulo 2 sama dengan 1. Artinya, 5 dibagi 2, sisanya 1 teks yang dimiringkan\n",
+        "\n",
+        "print('Hasil dari 6 modulo 3 adalah', 6 % 3)\n",
+        "# 6 Modulo 3 sama dengan 0. Artinya 6 dibagi 3, sisanya 0.\n",
+        "```\n",
+        "\n",
+        "Selamat mengerjakan!"
+      ],
+      "metadata": {
+        "id": "nQXj-SqMfSbZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "u=8\n",
+        "\n",
+        "for i in range(2,u,u):\n",
+        "    m=u%i\n",
+        "    if m ==0:\n",
+        "       print(\"bukan bilangan prima\")\n",
+        "       print( \"hasil dari  \",u,\"modulo  \",i,\"adalah \", m)\n",
+        "    else:\n",
+        "       print(\"bilangan prima\")\n",
+        "       print( \"hasil dari  \",u,\"modulo  \",i,\"adalah \", m)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N0gVYaF6w7bR",
+        "outputId": "ab09f1b7-266a-4643-e15f-42f0d47c9b37"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "bukan bilangan prima\n",
+            "hasil dari   8 modulo   2 adalah  0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
